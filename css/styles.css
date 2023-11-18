@@ -1,0 +1,395 @@
+:root {
+	--start-color: #2b4a61de;
+	--end-color: red;
+	--page-content-color: #0a3853;
+	--dark-text-color: #000;
+	--white-color: #fff;
+	--page-text-hover-color: #94cfff;
+	--background-button-color: #0b0e66;
+	--title-color: #141414;
+	--text-button-color: #26c6ea;
+}
+body {
+	font-family: 'Roboto', sans-serif;
+	font-style: normal;
+	line-height: normal;
+}
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+/*! Header  */
+header {
+	padding: 40px 0px;
+	display: flex;
+	text-decoration: none;
+	border-bottom: 3px solid var(--white-color);
+	background-image: url('../img/las.png');
+	position: relative;
+}
+header::before {
+	content: '';
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	position: absolute;
+	background-color: rgba(43, 74, 97, 0.87);
+}
+
+.header-container {
+	z-index: 3;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	justify-content: space-between;
+	gap: 168px;
+}
+
+.header-list {
+	gap: 38px;
+	display: flex;
+	text-decoration: none;
+	display: flex;
+}
+.header-item {
+	gap: 38px;
+	color: var(--white-color);
+	text-align: center;
+	font-family: 'Inter', sans-serif;
+	font-size: 20px;
+	font-weight: 300;
+}
+.header-item:hover {
+	transition: all 0.3s ease 0s;
+	color: var(--page-text-hover-color);
+	text-align: center;
+	font-family: 'Inter', sans-serif;
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.header-info-list {
+	display: flex;
+	gap: 10px;
+}
+
+.header-info-item {
+	color: var(--white-color);
+	text-align: center;
+	font-family: 'Hammersmith One', sans-serif;
+}
+.header-login {
+	padding: 9px 39.8px;
+	border-radius: 45px 0px;
+	border: 3px solid var(--page-text-hover-color);
+	background: var(--background-button-color);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: var(--page-text-hover-color);
+	text-align: justify;
+	font-size: 20px;
+	font-weight: 400;
+}
+.header-button-login {
+	color: var(--page-text-hover-color);
+	text-align: justify;
+	font-size: 20px;
+	font-weight: 400;
+}
+.header-button-login:hover {
+	color: var(--text-button-color);
+	text-align: justify;
+	font-size: 20px;
+	font-weight: 400;
+}
+
+.header-info-item {
+	padding-top: 10px;
+}
+
+.header-switcher-button {
+	padding: 10px 10px;
+}
+.header-eng {
+	color: var(--white-color);
+	text-align: center;
+	font-family: 'Hammersmith One', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+a.header-ua {
+	color: var(--white-color);
+	text-align: center;
+	font-family: 'Hammersmith One', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+/*! Main-page */
+
+/*! Hero */
+.page-home-hero {
+	background-image: url('../img/avatar-hero.png');
+}
+.hero-home-container {
+	display: flex;
+	justify-content: space-between;
+  align-items: center;
+}
+.hero-home-list {
+	padding: 196px 0px 0px 0px;
+}
+.hero-home_arrow_left {
+	width: 152px;
+	height: 40px;
+}
+.hero-home-text-navi {
+	width: 376px;
+	height: 123px;
+	color: var(--white-color);
+	font-family: 'Inter', sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+}
+.hero-home-text-ua {
+	height: 96px;
+	color: var(--white-color);
+	font-family: 'Inter', sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+}
+.hero-home-item-button {
+	padding: 42px 0px 179px;
+}
+.hero-home-button-clan {
+	padding: 10px 31px 10px 31px;
+	width: 260px;
+	height: 80px;
+	border-radius: 45px 0px;
+	border: 3px solid var(--page-text-hover-color);
+	background: var(--background-button-color);
+}
+.hero-home-clan {
+	width: 199px;
+	color: var(--page-text-hover-color);
+	text-align: center;
+	font-size: 24px;
+	font-weight: 400;
+}
+.hero-home-wiosca-clan {
+	margin-left: 58px;
+}
+
+.hero-home-networks {
+	padding-top: 100px;
+	display: flex;
+	flex-direction: column;
+	align-items: end;
+	text-align: center;
+	gap: 25px;
+}
+/*! advantages-home */
+.page-home-advantages {
+	background: var(--white-color);
+}
+
+.advantages-home-title1 {
+	margin-bottom: 4px;
+	margin-top: 75px;
+	color: var(--page-content-color);
+	text-align: center;
+	font-family: 'Inter', sans-serif;
+	font-size: 36px;
+	font-weight: 400;
+}
+.advantages-home-title2 {
+	margin-bottom: 16px;
+	color: var(--page-content-color);
+	text-align: center;
+	font-family: 'Inter', sans-serif;
+	font-size: 36px;
+	font-weight: 400;
+}
+.advantages-home-text {
+	margin-bottom: 8px;
+	color: var(--dark-text-color);
+	text-align: center;
+	font-family: 'Inter', sans-serif;
+	font-size: 24px;
+	font-weight: 400;
+	line-height: normal;
+}
+.advantages-home-eagle-arrow {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px 380px;
+}
+/*! overlord-home */
+.page-home-overlord {
+	background-image: url('../img/avatar-trailer.png');
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.overlord-home-container {
+padding: 330px
+}
+.overlord-home-trailer-button {
+	width: 260px;
+	height: 80px;
+	flex-shrink: 0;
+	border-radius: 45px 0px;
+	border: 3px solid var(--page-text-hover-color);
+	background: var(--page-content-color);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.overlord-home-look-trailer {
+	color: var(--page-text-hover-color);
+	text-align: justify;
+	font-size: 24px;
+	font-weight: 400;
+}
+
+/*! Hydra */
+.page-home-hydra {
+	background-image: url('../img/language_navi_hydra.png');
+}
+.hydra-home-title {
+	padding-top: 52px;
+	padding-bottom: 45px;
+	color: var(--title-color);
+	text-align: center;
+	font-size: 32px;
+	font-weight: 400;
+}
+.hydra-home-list {
+	gap: 25px;
+	display: flex;
+	flex-wrap: wrap;
+}
+.hydra-home-item {
+	flex: 0 1 calc((100% - 25px * 2) / 3);
+	width: 320px;
+	height: 240px;
+	flex-shrink: 0;
+	background: rgba(255, 255, 255, 0.7);
+}
+.hydra-home-text-ua {
+	margin-top: 36px;
+	color: var(--title-color);
+	text-align: center;
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 24px;
+}
+.hydra-home-photo {
+	margin: 40px 159px;
+	justify-content: center;
+	width: 152px;
+	height: 40px;
+	flex-shrink: 0;
+}
+
+.hydra-home-text-eng {
+	margin-bottom: 36px;
+	color: var(--dark-text-color);
+	text-align: center;
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 24px;
+}
+
+/*! FOOTER */
+footer {
+	background-image: url('../img/las.png');
+	position: relative;
+}
+footer::before {
+	content: '';
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	position: absolute;
+	background-color: rgba(43, 74, 97, 0.87);
+}
+.footer-home-container {
+	display: flex;
+  justify-content: space-between;
+  align-items: center;
+	gap: 80px;
+	z-index: 3;
+	position: relative;
+	padding-bottom: 25px;
+padding-top: 35px;
+}
+
+.footer-home-block-liferstyle {
+
+}
+.footer-home-hr-liferstyle {
+	background-color: var(--white-color);
+	width: 2px;
+	height: 153px;
+	rotate: 180deg;
+}
+.footer-home-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 37px;
+}
+
+/* flex: 0 1 calc((100% - 30px * 2) / 3); */
+.footer-home-list {
+	margin-top: 80px;
+	padding-right: 200px;
+}
+.footer-home-item {
+	display: flex;
+	gap: 20px;
+	margin-top: 16px;
+	
+}
+.footer-home-text-email {
+	white-space: nowrap;
+	color: var(--white-color);
+	text-align: justify;
+	font-family: 'Inter', sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.footer-home-line {
+	width: 100%;
+	height: 100%;
+	margin-top: 10px;
+	border-top: 3px dotted var(--white-color);
+}
+.footer-home-link-email {
+	white-space: nowrap;
+	color: var(--white-color);
+	text-align: justify;
+	font-family: 'Inter', sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.footer-home-text-info {
+	color: var(--white-color);
+	font-family: 'Inter', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	display: flex;
+	align-items: end;
+}
