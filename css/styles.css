@@ -646,6 +646,7 @@ padding: 330px
 	gap: 25px;
 	display: flex;
 	flex-wrap: wrap;
+	padding-bottom: 57px;
 }
 .hydra-english-item {
 	flex: 0 1 calc((100% - 25px * 2) / 3);
